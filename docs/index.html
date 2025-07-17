@@ -29,9 +29,9 @@
       margin: 0.2rem;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
-      padding: 2rem 1rem;
+      padding: 2rem 1.5rem;
     }
     section {
       margin-bottom: 2.5rem;
@@ -41,7 +41,7 @@
       color: #14213d;
       border-bottom: 2px solid #ccc;
       padding-bottom: 0.4rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       display: flex;
       align-items: center;
       gap: 0.5rem;
@@ -50,19 +50,31 @@
       font-size: 1.2rem;
       color: #1f3a93;
     }
-    ul {
+    ul, .grid-list {
       padding-left: 1.2rem;
     }
     .info-block {
-      margin-bottom: 1rem;
+      background-color: #f3f6f9;
+      border-left: 4px solid #1f3a93;
+      padding: 1rem;
+      margin-bottom: 1.2rem;
+      border-radius: 6px;
     }
     .info-block h3 {
-      margin: 0.3rem 0 0.1rem 0;
+      margin: 0.3rem 0 0.5rem 0;
       font-weight: 600;
     }
-    .info-block p {
-      margin: 0;
-      color: #444;
+    .grid-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 1.5rem;
+      list-style: none;
+      padding: 0;
+    }
+    .grid-list li::before {
+      content: '✔';
+      color: #1f3a93;
+      margin-right: 0.5rem;
     }
     a {
       color: #0d3b66;
@@ -90,15 +102,18 @@
 
     <section>
       <h2><i class="ri-user-line"></i>About Me</h2>
-      <p>I am a research-driven stem cell biologist focusing on the interface of pluripotent stem cells and neuroimmunology. My academic journey bridges developmental biology, immunotherapy, and functional modeling of human microglia for translational applications in neurodegenerative diseases.</p>
+      <div class="info-block">
+        <p>I am a research-driven stem cell biologist focusing on the interface of pluripotent stem cells and neuroimmunology. My academic journey bridges developmental biology, immunotherapy, and functional modeling of human microglia for translational applications in neurodegenerative diseases.</p>
+      </div>
     </section>
 
     <section>
       <h2><i class="ri-compass-line"></i>Research Focus</h2>
-      <ul>
+      <ul class="grid-list">
         <li>Directed differentiation of PSCs into microglia and megakaryocytes</li>
         <li>Modeling neuroinflammation and aging-related decline using stem cell-derived immune cells</li>
         <li>Single-cell analysis and transcriptomic profiling of immune cell identity</li>
+        <li>GMP-compliant culture systems for scalable cell therapy platforms</li>
       </ul>
     </section>
 
@@ -106,37 +121,51 @@
       <h2><i class="ri-flask-line"></i>Research Experience</h2>
       <div class="info-block">
         <h3>Microglia Differentiation (2022–2024)</h3>
-        <p>Developed a feeder-free, xeno-free differentiation protocol using H9 ESCs. Validated microglial identity (TMEM119, P2RY12, CX3CR1) using FACS and ICC. Conducted co-culture assays with neurons to evaluate inflammatory responses.</p>
+        <ul class="grid-list">
+          <li>Feeder-free, xeno-free protocol using H9 ESCs</li>
+          <li>Marker validation: TMEM119, P2RY12, CX3CR1</li>
+          <li>FACS and ICC for characterization</li>
+          <li>Inflammation modeling via IL-6 stimulation</li>
+        </ul>
       </div>
       <div class="info-block">
         <h3>Megakaryocyte Biogenesis (2021–2023)</h3>
-        <p>Optimized GMP-compatible protocol for iPSC-derived megakaryocyte generation. Quantified CD41/CD42b expression and platelet-like particle production. Evaluated ADAM17 inhibition effects on platelet function.</p>
+        <ul class="grid-list">
+          <li>iPSC-derived MK protocol in GMP-compatible conditions</li>
+          <li>Surface markers: CD41, CD42b</li>
+          <li>ADAM17 inhibitor (KP-457) application</li>
+          <li>Platelet-like particle quantification</li>
+        </ul>
       </div>
     </section>
 
     <section>
       <h2><i class="ri-tools-line"></i>Technical Expertise</h2>
-      <ul>
-        <li>Stem Cell Techniques: hPSC culture, lineage differentiation (microglia, megakaryocytes)</li>
-        <li>Immunoassays: Flow cytometry, ICC, ELISA, qPCR, WB</li>
-        <li>Data Analysis: ImageJ, Prism, basic R/Seurat</li>
-        <li>Scientific Documentation: SOPs, proposal writing, publication drafting</li>
+      <ul class="grid-list">
+        <li>hPSC culture and lineage differentiation</li>
+        <li>Flow cytometry, ICC, ELISA, qPCR</li>
+        <li>Western blot, cytokine assays</li>
+        <li>ImageJ, GraphPad, R (Seurat)</li>
+        <li>Experimental SOP writing and documentation</li>
+        <li>Poster design, figure layout</li>
       </ul>
     </section>
 
     <section>
       <h2><i class="ri-book-open-line"></i>Publications & Presentations</h2>
-      <ul>
-        <li>Kim Y et al. (2024). "Microglia Differentiation from ESCs for Cell Therapy". Poster at ISSCR 2024.</li>
-        <li>Kim Y et al. (in prep). "Enhanced Platelet Generation via ADAM17 Inhibition".</li>
-      </ul>
+      <div class="info-block">
+        <p><strong>Kim Y</strong>, et al. "Microglia Differentiation from ESCs for Cell Therapy." Poster, ISSCR 2024.</p>
+        <p><strong>Kim Y</strong>, et al. (in prep). "Enhanced Platelet Generation via ADAM17 Inhibition"</p>
+      </div>
     </section>
 
     <section>
       <h2><i class="ri-mail-line"></i>Contact</h2>
-      <p>Email: <a href="mailto:yonghee.kim.bio@gmail.com">yonghee.kim.bio@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/your-link">linkedin.com/in/your-link</a></p>
-      <p>Portfolio (optional): <a href="https://notion.so/your-portfolio">notion.so/your-portfolio</a></p>
+      <div class="info-block">
+        <p>Email: <a href="mailto:yonghee.kim.bio@gmail.com">yonghee.kim.bio@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/your-link">linkedin.com/in/your-link</a></p>
+        <p>Portfolio: <a href="https://notion.so/your-portfolio">notion.so/your-portfolio</a></p>
+      </div>
     </section>
 
   </div>
