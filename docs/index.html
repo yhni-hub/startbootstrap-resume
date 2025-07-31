@@ -1,82 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yonghee Kim | Postdoctoral CV</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yonghee Kim | Postdoc CV</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <style>
     body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f6f9;
+      color: #14213d;
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #fdfdfd;
-      color: #2c3e50;
-      line-height: 1.6;
+      padding: 2rem;
     }
-    header {
-      background-color: #14213d;
-      color: white;
-      padding: 2.5rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin-bottom: 0.3rem;
-      font-size: 2.2rem;
-    }
-    header p {
-      font-size: 1rem;
-      margin: 0.2rem;
-    }
-    .btn {
-      display: inline-block;
-      background-color: #fca311;
-      color: #fff;
-      padding: 0.6rem 1rem;
-      margin-top: 1rem;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-    }
-    .btn:hover {
-      background-color: #d48806;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem 1.5rem;
-    }
-    section {
-      margin-bottom: 2.5rem;
+    h1, h2 {
+      color: #14213d;
     }
     h2 {
-      font-size: 1.4rem;
-      color: #14213d;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.4rem;
-      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      transition: color 0.3s ease;
     }
     h2 i {
-      font-size: 1.2rem;
       color: #1f3a93;
       transition: color 0.3s ease;
     }
     h2:hover i {
       color: #fca311;
     }
-    ul, .grid-list {
-      padding-left: 1.2rem;
+    .content-box {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
     }
     .info-block {
       background-color: #f3f6f9;
       border-left: 4px solid #1f3a93;
       padding: 1rem;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1rem;
       border-radius: 6px;
       transition: all 0.3s ease;
     }
@@ -85,121 +50,88 @@
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
-    .info-block h3 {
-      margin: 0.3rem 0 0.5rem 0;
-      font-weight: 600;
-    }
     .grid-list {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.5rem 1.5rem;
-      list-style: none;
-      padding: 0;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
     }
-    .grid-list li::before {
-      content: '✔';
-      color: #1f3a93;
-      margin-right: 0.5rem;
-    }
-    a {
-      color: #0d3b66;
+    .btn {
+      display: inline-block;
+      background-color: #1f3a93;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      margin-top: 10px;
+      border-radius: 6px;
       text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #777;
+    .btn:hover {
+      background-color: #0d2b6d;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Yonghee Kim</h1>
-    <p>Postdoctoral Fellow Candidate in Stem Cell & Neuroimmune Research</p>
-    <p>📍 Seoul, Korea | ✉️ <a href="mailto:yonghee.kim.bio@gmail.com" style="color:#fca311;">yonghee.kim.bio@gmail.com</a></p>
-    <a class="btn" href="https://drive.google.com/yourcv" target="_blank">Download CV (PDF)</a>
+    <p>Postdoctoral Fellow Candidate | Stem Cell Biology & Neuroimmune Research</p>
+    <p>📍 Seoul, Korea | ✉️ <a href="mailto:yonghee.kim.bio@gmail.com">yonghee.kim.bio@gmail.com</a> |
+       <a href="https://linkedin.com/in/your-link">LinkedIn</a></p>
+    <a href="https://drive.google.com/yourcv" class="btn">📄 Download CV (PDF)</a>
   </header>
 
-  <div class="container">
+  <section class="content-box">
+    <h2><i class="ri-user-line"></i>About Me</h2>
+    <p>I am a research-oriented scientist focusing on cell-based therapies using human pluripotent stem cells (hPSCs). My interest lies in modeling immune-cell interactions and applying stem cell-derived lineages to therapeutic platforms.</p>
+  </section>
 
-    <section>
-      <h2><i class="ri-user-line"></i>About Me</h2>
-      <div class="info-block">
-        <p>I am a research-driven stem cell biologist focusing on the interface of pluripotent stem cells and neuroimmunology. My academic journey bridges developmental biology, immunotherapy, and functional modeling of human microglia for translational applications in neurodegenerative diseases.</p>
-      </div>
-    </section>
+  <section class="content-box">
+    <h2><i class="ri-compass-line"></i>Research Focus</h2>
+    <ul>
+      <li>PSC-derived microglia for modeling neuroinflammation and cell therapy</li>
+      <li>Megakaryocyte differentiation and platelet production from iPSCs</li>
+      <li>Single-cell analysis of brain immune cell development</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2><i class="ri-compass-line"></i>Research Focus</h2>
-      <ul class="grid-list">
-        <li>Directed differentiation of PSCs into microglia and megakaryocytes</li>
-        <li>Modeling neuroinflammation and aging-related decline using stem cell-derived immune cells</li>
-        <li>Single-cell analysis and transcriptomic profiling of immune cell identity</li>
-        <li>GMP-compliant culture systems for scalable cell therapy platforms</li>
-      </ul>
-    </section>
+  <section class="content-box">
+    <h2><i class="ri-flask-line"></i>Research Experience</h2>
+    <div class="info-block">
+      <strong>Microglia Differentiation (2022–2024)</strong>
+      <p>Established feeder-free ESC protocol, validated TMEM119+/P2RY12+ phenotype, modeled inflammation via IL-6 treatment.</p>
+    </div>
+    <div class="info-block">
+      <strong>Megakaryocyte Generation (2021–2023)</strong>
+      <p>Generated MKs from iPSCs in xeno-free medium, assessed CD41/CD42b expression, improved PLP output with ADAM17 inhibition.</p>
+    </div>
+  </section>
 
-    <section>
-      <h2><i class="ri-flask-line"></i>Research Experience</h2>
-      <div class="info-block">
-        <h3>Microglia Differentiation (2022–2024)</h3>
-        <ul class="grid-list">
-          <li>Feeder-free, xeno-free protocol using H9 ESCs</li>
-          <li>Marker validation: TMEM119, P2RY12, CX3CR1</li>
-          <li>FACS and ICC for characterization</li>
-          <li>Inflammation modeling via IL-6 stimulation</li>
-        </ul>
-      </div>
-      <div class="info-block">
-        <h3>Megakaryocyte Biogenesis (2021–2023)</h3>
-        <ul class="grid-list">
-          <li>iPSC-derived MK protocol in GMP-compatible conditions</li>
-          <li>Surface markers: CD41, CD42b</li>
-          <li>ADAM17 inhibitor (KP-457) application</li>
-          <li>Platelet-like particle quantification</li>
-        </ul>
-      </div>
-    </section>
+  <section class="content-box">
+    <h2><i class="ri-tools-line"></i>Technical Expertise</h2>
+    <div class="grid-list">
+      <div class="info-block">FACS, ICC, qPCR, ELISA</div>
+      <div class="info-block">Stem cell culture & differentiation</div>
+      <div class="info-block">RNA-seq (bulk & single-cell)</div>
+      <div class="info-block">ImageJ, GraphPad, R</div>
+    </div>
+  </section>
 
-    <section>
-      <h2><i class="ri-tools-line"></i>Technical Expertise</h2>
-      <ul class="grid-list">
-        <li>hPSC culture and lineage differentiation</li>
-        <li>Flow cytometry, ICC, ELISA, qPCR</li>
-        <li>Western blot, cytokine assays</li>
-        <li>ImageJ, GraphPad, R (Seurat)</li>
-        <li>Experimental SOP writing and documentation</li>
-        <li>Poster design, figure layout</li>
-      </ul>
-    </section>
+  <section class="content-box">
+    <h2><i class="ri-book-open-line"></i>Publications & Presentations</h2>
+    <ul>
+      <li><b>Kim Y</b>, et al. “Microglia Differentiation from ESCs” – Poster, ISSCR 2024</li>
+      <li><b>Kim Y</b>, et al. “Enhanced Platelet Generation” – In preparation</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2><i class="ri-book-open-line"></i>Publications & Presentations</h2>
-      <div class="info-block">
-        <p><strong>Kim Y</strong>, et al. "Microglia Differentiation from ESCs for Cell Therapy." Poster, ISSCR 2024.</p>
-        <p><strong>Kim Y</strong>, et al. (in prep). "Enhanced Platelet Generation via ADAM17 Inhibition"</p>
-      </div>
-    </section>
-
-    <section>
-      <h2><i class="ri-mail-line"></i>Contact</h2>
-      <div class="info-block">
-        <p>Email: <a href="mailto:yonghee.kim.bio@gmail.com">yonghee.kim.bio@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/your-link">linkedin.com/in/your-link</a></p>
-        <p>Portfolio: <a href="https://notion.so/your-portfolio">notion.so/your-portfolio</a></p>
-        <a class="btn" href="https://forms.gle/your-google-form" target="_blank">Send a Message</a>
-      </div>
-    </section>
-
-  </div>
-
-  <footer>
-    &copy; 2025 Yonghee Kim. All rights reserved.
-  </footer>
+  <section class="content-box">
+    <h2><i class="ri-mail-line"></i>Contact</h2>
+    <p>Email: <a href="mailto:yonghee.kim.bio@gmail.com">yonghee.kim.bio@gmail.com</a><br/>
+       LinkedIn: <a href="https://linkedin.com/in/your-link">linkedin.com/in/your-link</a>
+    </p>
+    <a href="https://drive.google.com/yourcv" class="btn">📄 Download Full CV</a>
+  </section>
 
 </body>
 </html>
