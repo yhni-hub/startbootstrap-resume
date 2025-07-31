@@ -28,6 +28,20 @@
       font-size: 1rem;
       margin: 0.2rem;
     }
+    .btn {
+      display: inline-block;
+      background-color: #fca311;
+      color: #fff;
+      padding: 0.6rem 1rem;
+      margin-top: 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #d48806;
+    }
     .container {
       max-width: 900px;
       margin: auto;
@@ -45,10 +59,15 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      transition: color 0.3s ease;
     }
     h2 i {
       font-size: 1.2rem;
       color: #1f3a93;
+      transition: color 0.3s ease;
+    }
+    h2:hover i {
+      color: #fca311;
     }
     ul, .grid-list {
       padding-left: 1.2rem;
@@ -102,6 +121,7 @@
     <h1>Yonghee Kim</h1>
     <p>Postdoctoral Fellow Candidate in Stem Cell & Neuroimmune Research</p>
     <p>📍 Seoul, Korea | ✉️ <a href="mailto:yonghee.kim.bio@gmail.com" style="color:#fca311;">yonghee.kim.bio@gmail.com</a></p>
+    <a class="btn" href="https://drive.google.com/yourcv" target="_blank">Download CV (PDF)</a>
   </header>
 
   <div class="container">
@@ -171,6 +191,7 @@
         <p>Email: <a href="mailto:yonghee.kim.bio@gmail.com">yonghee.kim.bio@gmail.com</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/your-link">linkedin.com/in/your-link</a></p>
         <p>Portfolio: <a href="https://notion.so/your-portfolio">notion.so/your-portfolio</a></p>
+        <a class="btn" href="https://forms.gle/your-google-form" target="_blank">Send a Message</a>
       </div>
     </section>
 
@@ -182,4 +203,3 @@
 
 </body>
 </html>
-
